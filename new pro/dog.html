@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">Pittinun Teng<span class="dot">.</span></h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="dog.html" class="active">My dog</a></li>
+                    <li><a href="music.html">Music</a></li>
+                   
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="content2">
+            <h1 class="name">Lucky is a pomchi dog</h1>
+        
+            <div class="gallery-container">
+                <div class="gallery">
+                    <a target="_blank" href="images/lucky1.jpg">
+                        <img src="images/lucky1.jpg">
+                    </a>
+                    <div class="desc">Lucky is standing</div>
+                </div>
+                
+                <div class="gallery">
+                    <a target="_blank" href="images/lucky2.jpg">
+                        <img src="images/lucky2.jpg">
+                    </a>
+                    <div class="desc">Lucky is sitting</div>
+                </div>
+                
+                <div class="gallery">
+                    <a target="_blank" href="images/lucky3.jpg">
+                        <img src="images/lucky3.jpg">
+                    </a>
+                    <div class="desc">Lucky is playing</div>
+                </div>
+            </div>
+        </main>
+            
+        
+           
+    </div>
+<script> 
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll("nav ul li a");
+
+    menuItems.forEach(item => {
+        item.addEventListener("click", function () {
+            menuItems.forEach(i => i.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/* รีเซ็ตค่าเริ่มต้นของ CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #f8f8f8;
+}
+
+/* Container หลัก */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #f2f2f2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.dot {
+    color: gray;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: gray;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Profile Section */
+.profile {
+    max-width: 500px;
+}
+
+.profile img {
+    width: 280px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 18px;
+    color: gray;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        align-items: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .content {
+        padding: 40px;
+    }
+}
+
+
+div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+
+.gallery-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the gallery */
+    gap: 15px; /* Adds space between images */
+    margin-top: 20px; /* Adds space between <h1> and gallery */
+}
+
+.gallery {
+    border: 1px solid #ddd; /* Adds a border */
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 200px; /* Controls the image size */
+    text-align: center;
+    margin: 5px;
+}
+
+.gallery img {
+    width: 100%; /* Makes images responsive */
+    height: auto;
+    border-radius: 5px;
+}
+
+.desc {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.content2 {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
